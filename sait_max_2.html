@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Артур Сергеевич — косметолог в Чебоксарах</title>
+<meta name="description" content="Артур Сергеевич — косметолог в Чебоксарах. Уходовые процедуры для лица и шеи, чистки, микронидлинг. Онлайн-запись через Dikidi.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',Arial,sans-serif; color:#2e3a3a; line-height:1.6; }
+  .container { max-width:900px; margin:0 auto; padding:0 20px; }
+  section { padding:60px 0; }
+  h2 { font-size:28px; margin-bottom:24px; color:#4a6b6b; }
+
+  .hero { background:linear-gradient(135deg,#f2f7f6,#e0eeec); text-align:center; padding:80px 20px; }
+  .hero img { width:160px; height:160px; border-radius:50%; object-fit:cover; border:4px solid #fff; box-shadow:0 8px 24px rgba(0,0,0,.1); margin-bottom:20px; }
+  .hero h1 { font-size:36px; margin-bottom:8px; }
+  .hero p { font-size:18px; color:#5f7575; margin-bottom:28px; }
+  .btn { display:inline-block; background:#4a8b8b; color:#fff; padding:14px 36px; border-radius:40px; text-decoration:none; font-size:17px; font-weight:600; transition:.2s; }
+  .btn:hover { background:#3a6f6f; transform:translateY(-2px); }
+
+  .price-list { list-style:none; }
+  .price-list li { padding-bottom:12px; border-bottom:1px dashed #cfe0de; }
+  .desc-toggle {
+    margin-top:8px; background:none; border:none; color:#4a8b8b;
+    font-size:14px; font-weight:600; cursor:pointer; padding:0;
+    font-family:inherit;
+  }
+  .desc-toggle:hover { text-decoration:underline; }
+  .desc-content {
+    display:none; font-size:14px; color:#5f7575; margin-top:8px;
+    max-width:600px; line-height:1.5;
+  }
+  .desc-content.open { display:block; }
+
+  .diplomas { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; }
+  .diplomas img { width:100%; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,.08); cursor:pointer; }
+  .diplomas-placeholder { border:2px dashed #cfe0de; border-radius:12px; padding:40px 20px; text-align:center; color:#8a9a9a; }
+
+  .reviews-list { display:grid; gap:16px; }
+  .review { background:#f9fcfb; border-radius:12px; padding:20px; border-left:4px solid #4a8b8b; }
+  .review-author { font-weight:600; color:#4a6b6b; margin-bottom:4px; }
+  .review-date { font-size:13px; color:#8a9a9a; margin-bottom:8px; }
+  .review-text { font-size:15px; }
+
+  .contacts { background:#f2f7f6; border-radius:16px; padding:32px; }
+  .contacts a { color:#4a6b6b; text-decoration:none; font-weight:600; }
+  .contacts p { margin-bottom:12px; }
+
+  iframe { width:100%; height:320px; border:0; border-radius:12px; }
+  footer { text-align:center; padding:24px; font-size:14px; color:#8a9a9a; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="photo.jpg" alt="Артур Сергеевич — косметолог">
+  <h1>Артур Сергеевич</h1>
+  <p>Косметолог · дипломированный специалист</p>
+  <a href="https://dikidi.net/kosmetolog21" class="btn" target="_blank">Записаться онлайн</a>
+</header>
+
+<section class="container">
+  <h2>Обо мне</h2>
+  <p>Недавно закончил обучение по косметологии и уже принимаю клиентов. Работаю на профессиональной косметике, внимательно отношусь к каждому запросу и подбираю уход индивидуально. Выполняю уходовые процедуры для лица и шеи.</p>
+  <p style="margin-top:12px;">Для меня важно, чтобы вы ушли с результатом и комфортными ощущениями — поэтому на консультацию и процедуру отвожу достаточно времени.</p>
+</section>
+
+<section class="container">
+  <h2>Услуги и цены</h2>
+  <ul class="price-list" style="display:flex; flex-direction:column; gap:16px;">
+
+    <li>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <strong>Лифтинг-уход</strong>
+        <span style="font-weight:600; color:#4a6b6b;">2 490 ₽</span>
+      </div>
+      <button class="desc-toggle" onclick="toggleDesc(this)">Описание ▾</button>
+      <div class="desc-content">
+        Уходовая процедура кожи лица и шеи. Диагностика и подбор необходимой процедуры для нормализации состояния кожи лица. Включает в себя уход на профессиональной космецевтике KristiProf, один из видов массажа лица (выбирается по показаниям) и альгинатная маска в завершении процедуры.
+      </div>
+    </li>
+
+    <li>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <strong>Микронидлинг</strong>
+        <span style="font-weight:600; color:#4a6b6b;">3 190 ₽</span>
+      </div>
+      <button class="desc-toggle" onclick="toggleDesc(this)">Описание ▾</button>
+      <div class="desc-content">
+        Микронидлинг или фракционная мезотерапия. Аппаратный уход за кожей лица с использованием профессиональных косметических средств KristiProf. Корректирует овал лица, снимает отечность, убирает мелкие морщины и делает глубокие менее заметными.
+      </div>
+    </li>
+
+    <li>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <strong>Чистка лица комбинированная</strong>
+        <span style="font-weight:600; color:#4a6b6b;">1 490 ₽</span>
+      </div>
+      <button class="desc-toggle" onclick="toggleDesc(this)">Описание ▾</button>
+      <div class="desc-content">
+        Комбинированная чистка лица (УЗ + механическая) на профессиональной космецевтике KristiProf.
+      </div>
+    </li>
+
+    <li>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <strong>Чистка лица УЗ</strong>
+        <span style="font-weight:600; color:#4a6b6b;">990 ₽</span>
+      </div>
+      <button class="desc-toggle" onclick="toggleDesc(this)">Описание ▾</button>
+      <div class="desc-content">
+        УЗ-чистка лица с применением профессиональных косметических средств KristiProf.
+      </div>
+    </li>
+
+    <li>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <strong>Консультация</strong>
+        <span style="font-weight:600; color:#4a6b6b;">бесплатно</span>
+      </div>
+      <button class="desc-toggle" onclick="toggleDesc(this)">Описание ▾</button>
+      <div class="desc-content">
+        Диагностика состояния кожи и подбор подходящего ухода. Ответы на вопросы по домашнему уходу.
+      </div>
+    </li>
+
+  </ul>
+  <p style="margin-top:16px; font-size:14px; color:#8a9a9a;">* Актуальные цены и свободное время — на странице записи Dikidi.</p>
+</section>
+
+<section class="container">
+  <h2>Отзывы клиентов</h2>
+  <div class="reviews-list">
+    <div class="review">
+      <div class="review-author">Вероника</div>
+      <div class="review-date">24 апреля 2026</div>
+      <div class="review-text">Я очень щепетильно выбирала мастера, так как перманентные брови это не на недельку) Артур очень внимательный и заботливый, впечатлил его творческий подход. Полное совпадение ожидание = реальность. По поводу болезненности процедуры, у каждого свой болевой порог, поэтому обезболивающий крем очень выручил. Все было комфортно, я даже успела поспать во время процедуры. Спасибо🤗 Рекомендую😉</div>
+    </div>
+  </div>
+  <p style="margin-top:16px; text-align:center;">
+    <a href="https://dikidi.net/kosmetolog21" class="btn" target="_blank">Все отзывы и запись на Dikidi</a>
+  </p>
+</section>
+
+<section class="container">
+  <h2>Дипломы и сертификаты</h2>
+  <div class="diplomas">
+    <div class="diplomas-placeholder">📄 Фото диплома будет добавлено позже</div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Где я принимаю</h2>
+  <p style="margin-bottom:16px;">
+    г. Чебоксары, проспект Тракторостроителей, д. 11<br>
+    Торговый дом «ОВАС», офис 505 (5 этаж)
+  </p>
+  <iframe 
+    src="https://yandex.ru/map-widget/v1/?ll=47.288206%2C56.099840&z=17&pt=47.288206,56.099840,pm2rdm" 
+    width="100%" 
+    height="320" 
+    frameborder="0"
+    loading="lazy"
+    style="border-radius:12px;">
+  </iframe>
+</section>
+
+<section class="container">
+  <h2>Контакты</h2>
+  <div class="contacts">
+    <p>📞 Телефон: <a href="tel:+79083001472">+7 908 300-14-72</a></p>
+    <p>✈️ Telegram: <a href="https://t.me/ArchiDoc21">@ArchiDoc21</a></p>
+    <p>💬 MAX: <a href="https://max.ru/u/f9LHodD0cOKe5z8AOxD6eb7otnhVlk39B6To0AGxi-0zzccibgj3OtfA1so">Написать в MAX</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/arturchi1989">@arturchi1989</a></p>
+    <p>📅 Онлайн-запись: <a href="https://dikidi.net/kosmetolog21">Dikidi</a></p>
+    <p style="margin-top:20px;"><a href="https://dikidi.net/kosmetolog21" class="btn" target="_blank">Записаться онлайн</a></p>
+  </div>
+</section>
+
+<footer>© 2025 Артур Сергеевич · Косметология · Чебоксары</footer>
+
+<script>
+  function toggleDesc(btn) {
+    const content = btn.nextElementSibling;
+    const isOpen = content.classList.toggle('open');
+    btn.textContent = isOpen ? 'Скрыть ▴' : 'Описание ▾';
+  }
+</script>
+
+</body>
+</html>
